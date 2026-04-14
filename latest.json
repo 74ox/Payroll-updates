@@ -1,0 +1,11 @@
+{
+  "version": "1.0.2",
+  "notes": "User management update: super admin can update username and user display name.",
+  "pub_date": "2026-04-14T13:18:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV0FxZWhNbVlwYXZoRWt1eXZiWUU5ZVhyQ3ZqVXJxYmpyYU9jdnpFWW9JYUcyQVc5MTZvZjcwb2ZWc3U5ck41L09kL0djZ244bVNYTE1DTVFVVVdpa2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MTYxOTAwCWZpbGU6UGF5cm9sbCBBcHBfMS4wLjJfeDY0LXNldHVwLmV4ZQpRRk5uK2g3U0NkR3VsUkRsQUVRNXYyWGFHYUlXMThhSFAvdjd1Rk1Zc2RabkJFSkZIY2x4TmgyRFpqdGx0UDk3LzhWbTd2ZzBZRlp0TzRNbDJKaHZCQT09Cg==",
+      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.0.2/Payroll.App_1.0.2_x64-setup.exe"
+    }
+  }
+}

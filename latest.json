@@ -1,19 +1,19 @@
 {
-  "version": "1.4.0",
-  "notes": "New reports and currency-correct amounts. Includes Windows x64 NSIS + MSI installers and Tauri updater artifacts (latest.json + signatures).\r\n\r\n**New reports**\r\n- **Summary by accounting code**: net pay for a period per accounting code, with IQD and USD side by side and a total row.\r\n- **Payroll register**: every employee paid in a period with their code, name, currency, days worked, hire date, location, bank account, accounting code, each salary component, gross, deductions and net pay, plus IQD and USD totals.\r\n- **Payslips without bank account**: lists the employees paid in a period who have no bank account, and downloads all their payslips as one PDF, one per page, ready to print. Employees with a bank account still get theirs from their profile.\r\n\r\n**Amounts**\r\n- USD amounts show cents (e.g. 1,000.87) and IQD amounts show fils (e.g. 1,000.574) everywhere: payslips, reports, the dashboard, loans and the timesheet preview.\r\n- New payroll runs round net pay the same way: USD to 2 decimals, IQD to 3. Posted payslips are not changed.\r\n- Loans now show in the employee's own currency instead of always IQD.\r\n\r\n**Reports**\r\n- Column headings are plain words (no underscores), and internal record numbers are no longer shown.\r\n- Report PDFs size each column to its content, so long codes and large totals no longer overlap. Excel exports use the same headings and keep amounts as numbers.",
-  "pub_date": "2026-10-24T10:46:18.955Z",
+  "version": "1.4.1",
+  "notes": "Bank account fix for bulk payslips. Includes Windows x64 NSIS + MSI installers and Tauri updater artifacts (latest.json + signatures).\r\n\r\n**Payslips without bank account**\r\n- A bank account now counts only when it is a 10-digit number. Employees marked \"Cash\", \"Bank transfer\", or with no number are included in the report, so their payslips are in the printable PDF.\r\n- The report explains this rule on screen.",
+  "pub_date": "2026-10-24T11:15:16.701Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV0F1U0gybStUYWloMHIrK3pwbEMrdUtoTUd5UTllaDYvMlRSam9TcXhHcytGeFVkb0tTQ2k1Y2YxaFpDNkl3WXlqVmc2QnpleHYxR2lQRFlGTkpROXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODM4NzczCWZpbGU6UGF5cm9sbCBBcHBfMS40LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuNC4wCk5QNkowVEM1TlUxbHdjZUZzeTVRN2xkQmNhaDRaVXJQcnlqOWxuaUZmL3Fzd3BYYVhJY1NCRytFMi9tTUJ2cll0REVNa0I5eHliSUg5RmJhdTM2VkR3PT0K",
-      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.0/Payroll.App_1.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV0FPSjZZOG9hangrS0FoQjI4WVQ5WUR2d2NUa3RzZENvZFdndUZwUHRBS0Z3UWR1RzBIRG1LWC93N0hwdXhaRUtSbzlPMGd1RXdJS3k4YnpyV1RmN1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODQwNTEwCWZpbGU6UGF5cm9sbCBBcHBfMS40LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuNC4xClJNdDIxT3ZYcW5Pc3NaYWRCMnplUUdUa2E0bjN5Y0pOeWhVczFWdmtQb3k3OVRpNWxmTWZkaFFvWTFzRnNrRFJicVNSM1hENmNwVkF2Ny9aM3BJdENRPT0K",
+      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.1/Payroll.App_1.4.1_x64-setup.exe"
     },
     "windows-x86_64-nsis": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV0F1U0gybStUYWloMHIrK3pwbEMrdUtoTUd5UTllaDYvMlRSam9TcXhHcytGeFVkb0tTQ2k1Y2YxaFpDNkl3WXlqVmc2QnpleHYxR2lQRFlGTkpROXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODM4NzczCWZpbGU6UGF5cm9sbCBBcHBfMS40LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuNC4wCk5QNkowVEM1TlUxbHdjZUZzeTVRN2xkQmNhaDRaVXJQcnlqOWxuaUZmL3Fzd3BYYVhJY1NCRytFMi9tTUJ2cll0REVNa0I5eHliSUg5RmJhdTM2VkR3PT0K",
-      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.0/Payroll.App_1.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV0FPSjZZOG9hangrS0FoQjI4WVQ5WUR2d2NUa3RzZENvZFdndUZwUHRBS0Z3UWR1RzBIRG1LWC93N0hwdXhaRUtSbzlPMGd1RXdJS3k4YnpyV1RmN1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODQwNTEwCWZpbGU6UGF5cm9sbCBBcHBfMS40LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuNC4xClJNdDIxT3ZYcW5Pc3NaYWRCMnplUUdUa2E0bjN5Y0pOeWhVczFWdmtQb3k3OVRpNWxmTWZkaFFvWTFzRnNrRFJicVNSM1hENmNwVkF2Ny9aM3BJdENRPT0K",
+      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.1/Payroll.App_1.4.1_x64-setup.exe"
     },
     "windows-x86_64-msi": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV05VZFJDZjRVMlh6ci9oMUt3NHRGbjhnVzN4N2RoSm5vQ0N4VHB4bnpwdWh2WnJ3L290Lzl4dHRNQURuTTdkKzJXYzcwWFp5RkcvUWR6ZmtmOHBtMndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODM4NzczCWZpbGU6UGF5cm9sbCBBcHBfMS40LjBfeDY0X2VuLVVTLm1zaQl2ZXJzaW9uOjEuNC4wCkVTN3NGazFEZWdtcWkyd1FCWmpIbHN2TWZKVzVydk4vL1NNSlZIM2VQdStLMFZDZVVaTzdsMGxKbExJN2pEN2FrUEJ1QlhEWGY0UzgxNW9kZEhmekF3PT0K",
-      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.0/Payroll.App_1.4.0_x64_en-US.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTDhXbWwyWFJQV092cklabXVPM0pjUFd5Qm14ZUdqQm80ZGkrRTNMUlhLSWdaYzJ1R28rNUg2dWxNV2tTbFkyTlcrQ0hSSUR3Ni94MW90c0s0ZmhTV1pDQ2xWMERIK1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyODQwNTEwCWZpbGU6UGF5cm9sbCBBcHBfMS40LjFfeDY0X2VuLVVTLm1zaQl2ZXJzaW9uOjEuNC4xCllkSElVdEZRYzV4NG1DUDFHdHdFejJBbVFwVTFEbWdWaG83VThNODcvY2VpbHRCK08xY2l2amtBdVRyaDR3U1kyVjQyR3A0STh2MjJzK1ZpRWNXNENnPT0K",
+      "url": "https://github.com/74ox/Payroll-updates/releases/download/v1.4.1/Payroll.App_1.4.1_x64_en-US.msi"
     }
   }
 }
